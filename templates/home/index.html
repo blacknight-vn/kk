@@ -1,0 +1,8 @@
+<h1>Hello1122</h1>
+
+{% for people in people %}
+    <h1>{{people.name}}</h1>
+    <h2>{{people.image}}</h2>
+    <img src='{{ MEDIA_URL }}{{people.image}}' alt = 'photo'>
+    <img src='{{ MEDIA_URL }}{{people.image2}}' alt = 'photo'>
+{% endfor %}
